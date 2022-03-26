@@ -10,6 +10,8 @@
 # Ejercicios de práctica numérica
 
 # Condicionales anidados
+print("Nuvamente juegos con numeros\n")
+
 numero_1 = 7
 numero_2 = -2
 
@@ -23,6 +25,28 @@ numero_2 = -2
 #       --> En caso afirmativo imprima en pantalla "Resp=3"
 #       --> En caso negativo imprima en pantalla "Resp=4"
 
+if numero_1 > 5:
+
+    if numero_2 > 0:
+
+        print("Resp=1")
+
+    else:
+
+        print("Resp=2")
+
+else:
+
+    if numero_2 > 5:
+
+        print("Resp=3")
+
+    else:
+
+        print("Resp=4")
+
+
+
 # Verifique la calificación de un estudiante según su
 # puntaje en un examen
 puntaje = 70
@@ -35,3 +59,30 @@ puntaje = 70
 
 # Debe imprimir en pantalla la calificacion
 # Utilizar "if" anidados
+
+if puntaje >= 90:
+
+    print("Su puntaje es una A")
+
+elif puntaje >= 80:
+
+    print("Su puntaje es una B")
+
+elif puntaje >= 70:
+
+    print("Su puntaje es una C")
+
+elif puntaje >= 60:
+
+    print("Su puntaje es una D")
+
+elif puntaje < 60:
+
+    print("Su puntaje es una F")
+
+else: 
+
+    print("El valor no esta dentro de un rango valido")
+
+
+print("Fin del programa")
