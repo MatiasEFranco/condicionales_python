@@ -58,7 +58,8 @@ else:
 if texto_1[1] > texto_2[1]:
     
     print('{} su primera letra es mayor que la de la palabra {}'.format(texto_1, texto_2))
-
+    print(texto_2[0])
+    print(texto_2[1])
 elif texto_2[1] > texto_1[1]:
     
     print('{} su primera letra es mayor que la de la palabra {}'.format(texto_2, texto_1))
