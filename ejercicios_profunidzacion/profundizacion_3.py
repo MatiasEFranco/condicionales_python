@@ -31,7 +31,7 @@ contenido. Recomendamos pensar bien este problema de lógica con un lápiz y pap
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
 
-
+'''
 while True:  
         
     try:
@@ -46,71 +46,89 @@ while True:
 
     except ValueError:
 
-        print("Error, por favor intentalo de nuevo\n")
+        print("Error, por favor intentalo de nuevo\n")'''
 
-if temperatura_1 == temperatura_2 and temperatura_2 == temperatura_3:
+def evalua_temperatura():
 
-    print("Las tres temperaturas son iguales")
+    if temperatura_1 == temperatura_2 and temperatura_2 == temperatura_3:
+
+        print("Las tres temperaturas son iguales")
 
 #analizis de la temperatura maxima
 
-elif temperatura_1 > temperatura_2 and temperatura_1 > temperatura_3:
+    elif temperatura_1 > temperatura_2 and temperatura_1 > temperatura_3:
 
-    print("La temperatura uno que es {} es la mayor".format(temperatura_1))
+        print("La temperatura uno que es {} es la mayor".format(temperatura_1))
     
-elif temperatura_2 > temperatura_1 and temperatura_2 > temperatura_3:
+    elif temperatura_2 > temperatura_1 and temperatura_2 > temperatura_3:
 
-    print("La temperatura dos que es ", temperatura_2, " es la mayor")
+        print("La temperatura dos que es ", temperatura_2, " es la mayor")
 
-elif temperatura_3 > temperatura_1 and temperatura_3 > temperatura_2:
+    elif temperatura_3 > temperatura_1 and temperatura_3 > temperatura_2:
 
-    print("La temperatura tres que es ", temperatura_3, " es la mayor")
+        print("La temperatura tres que es ", temperatura_3, " es la mayor")
 
-elif temperatura_1 > temperatura_2 and temperatura_1 == temperatura_3:
+    elif temperatura_1 > temperatura_2 and temperatura_1 == temperatura_3:
 
-    print("La temperatura uno y la tres son las mayores")
+        print("La temperatura uno y la tres son las mayores")
     
-elif temperatura_2 > temperatura_1 and temperatura_2 == temperatura_3:
+    elif temperatura_2 > temperatura_1 and temperatura_2 == temperatura_3:
 
-    print("La temperatura dos y la tres son las mayores")
+        print("La temperatura dos y la tres son las mayores")
 
-elif temperatura_1 > temperatura_3 and temperatura_1 == temperatura_2:
+    elif temperatura_1 > temperatura_3 and temperatura_1 == temperatura_2:
 
-    print("La temperatura uno y la dos son las mayores")
+        print("La temperatura uno y la dos son las mayores")
 
 
 #analizis de la temperatura minima
 
 
-if temperatura_1 < temperatura_2 and temperatura_1 < temperatura_3:
+    if temperatura_1 < temperatura_2 and temperatura_1 < temperatura_3:
 
-    print("La temperatura uno que es ", temperatura_1, " es la menor")
+        print("La temperatura uno que es ", temperatura_1, " es la menor")
     
-elif temperatura_2 < temperatura_1 and temperatura_2 < temperatura_3:
+    elif temperatura_2 < temperatura_1 and temperatura_2 < temperatura_3:
 
-    print("La temperatura dos que es ", temperatura_2, " es la menor")
+        print("La temperatura dos que es ", temperatura_2, " es la menor")
 
-elif temperatura_3 < temperatura_1 and temperatura_3 < temperatura_2:
+    elif temperatura_3 < temperatura_1 and temperatura_3 < temperatura_2:
 
-    print("La temperatura tres que es ", temperatura_3, " es la menor")
+        print("La temperatura tres que es ", temperatura_3, " es la menor")
 
-elif temperatura_1 < temperatura_2 and temperatura_1 == temperatura_3:
+    elif temperatura_1 < temperatura_2 and temperatura_1 == temperatura_3:
 
-    print("La temperatura uno y la tres son las menores")
+        print("La temperatura uno y la tres son las menores")
     
-elif temperatura_2 < temperatura_1 and temperatura_2 == temperatura_3:
+    elif temperatura_2 < temperatura_1 and temperatura_2 == temperatura_3:
 
-    print("La temperatura dos y la tres son las menores")
+        print("La temperatura dos y la tres son las menores")
 
-elif temperatura_1 < temperatura_3 and temperatura_1 == temperatura_2:
+    elif temperatura_1 < temperatura_3 and temperatura_1 == temperatura_2:
 
-    print("La temperatura uno y la dos son las menores")
+        print("La temperatura uno y la dos son las menores")
 
 
 #promedio entre las temperaturas
 
-promedio = (temperatura_1 + temperatura_2 + temperatura_3) / 3
+    promedio = (temperatura_1 + temperatura_2 + temperatura_3) / 3
 
-print("El promedio de las tres temperaturas es:", promedio) 
+    print("El promedio de las tres temperaturas es:", promedio) 
+
+
+try:
+            
+    temperatura_1 = float(input("Ingrese el primer valor de temperatura: "))
+
+    temperatura_2 = float(input("ingrese el segundo valor de temperatura: "))
+
+    temperatura_3 = float(input("Ingrese el tercer valor de temperatura: "))
+
+    evalua_temperatura()
+
+except ValueError:
+
+   print("Error, no se ingreso un dato correcto\n")
+
 
 print("Fin del programa")
